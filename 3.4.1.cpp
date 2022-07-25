@@ -19,13 +19,11 @@ public:
 		number_home = new_home;
 		number_apartment = new_apartment;
 	}
-	string get_output(ofstream &FFF) {
+	void get_output(ofstream &FFF) {
 		
 		FFF << name_city << " " << name_street << " " << number_home << " " << number_apartment << endl;
-		return "";
 	}
 };
-
 int main()
 {
 	setlocale(LC_ALL, "rus");
